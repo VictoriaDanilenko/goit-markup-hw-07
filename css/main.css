@@ -1,0 +1,131 @@
+/* BLOCK STYLES */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* ШАПКА САЙТА */
+/* .page-header {
+  background-color: var(--white-color);
+}
+.portfolio-header {
+    border-bottom: 1px solid #ececec;
+} */
+
+/* ГЕРОЙ */
+.hero-title {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.main-hero {
+  text-align: center;
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+/* КНОПКИ */
+.button.hero {
+  height: 50px;
+  min-width: 200px;
+  border-radius: 4px;
+  border-color: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  display: inline-block;
+  padding: 10px 32px;
+}
+
+.button {
+  color: var(--title-text-color);
+  text-align: center;
+}
+
+/* НАШИ ОСОБЕННОСТИ  */
+.feature-topic {
+  line-height: 1.71;
+  color: var(--description-color);
+}
+
+.feature-topic .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ  */
+/* заголовок секции (#2-#3) */
+.section-title{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* .work-topic {
+
+} */
+
+/* НАША КОМАНДА */
+
+/* .team-member {
+
+
+}
+.team-member-item {
+
+} */
+
+.cards-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-top: 30px;
+}
+.cards-description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+  /* ГАЛЕРЕЯ ФИЛЬТРОВ */
+
+.filter-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+
+.filter-description {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--description-color);
+}
+
