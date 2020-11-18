@@ -46,8 +46,7 @@ h3 {
 
 .logotype {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 
   color: var(--accent-color);
   text-decoration: none;
@@ -153,4 +152,11 @@ margin-left: auto;
   font-weight: normal;
   line-height: 1.7;
 }
+.footer-address {
+  padding-bottom: 9px;
+}
+
+
+
+
 

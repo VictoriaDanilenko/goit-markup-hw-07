@@ -8,12 +8,12 @@
 }
 
 /* ШАПКА САЙТА */
-/* .page-header {
+.page-header {
   background-color: var(--white-color);
 }
 .portfolio-header {
     border-bottom: 1px solid #ececec;
-} */
+}
 
 /* ГЕРОЙ */
 .hero-title {
@@ -155,19 +155,84 @@ margin-right: 30px;
   margin-bottom: 0px;
 }
 
-  /* ГАЛЕРЕЯ ФИЛЬТРОВ */
+  /* TODO:СТРАНИЦА ПОРТФОЛИО */
+  .filter-gallery {
+    display: flex;
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+ 
+/* КНОПКИ ПОРТФОЛИО */
+  .button-portfolio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 
-.filter-name {
+  /* .portfolio-filter {
+
+  } */
+
+  .portfolio-filter:not(:last-child) {
+      margin-right: 8px;
+    }
+  
+  .button.item:hover,
+  .button.item:focus,
+  .button.item:active {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+  }
+
+  .button.item {
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+  }
+
+  /* ГАЛЕРЕЯ ФИЛЬТРОВ */
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .filter-topic {
+    margin-bottom: 30px;
+    margin-right: 30px;
+    width: 370px;
+    border: 1px solid #EEEEEE;
+  }
+  
+  .filter-topic:nth-child(3n) {
+    margin-right: 0;
+  }
+  .filter-topic:nth-child(n+7) {
+    margin-bottom: 0;
+  }
+
+  .filter-item {
+    padding: 20px 24px;
+  }
+
+  .filter-name {
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin: auto;
     margin-bottom: 4px;
   }
 
-.filter-description {
+  .filter-description {
     font-size: 16px;
     line-height: 1.9;
     color: var(--description-color);
-}
+    margin: auto;
+  }
 
