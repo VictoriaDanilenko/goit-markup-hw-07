@@ -1,11 +1,11 @@
 /* УТИЛИТЫ */
 
-/* *,
+*,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-} */
+}
 
 :root {
   --title-text-color: #212121;
@@ -35,18 +35,19 @@ h3 {
   color: var(--title-text-color);
 }
 
-/* img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
-} */
+}
 
 /* ЛОГОТИП */
 /* TODO: у логотипа паддинги */
 
 .logotype {
   display: block;
-  padding-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 
   color: var(--accent-color);
   text-decoration: none;

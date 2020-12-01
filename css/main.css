@@ -10,9 +10,7 @@
 /* ШАПКА САЙТА */
 .page-header {
   background-color: var(--white-color);
-}
-.portfolio-header {
-    border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 /* ГЕРОЙ */
@@ -28,11 +26,29 @@
   margin-bottom: 30px;
   text-align: center;
 }
+
 .main-hero {
   text-align: center;
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Img-10-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #c4c4c4;
 }
 
 /* КНОПКИ */
@@ -206,7 +222,7 @@ margin-right: 30px;
     margin-bottom: 30px;
     margin-right: 30px;
     width: 370px;
-    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   
   .filter-topic:nth-child(3n) {
@@ -217,7 +233,7 @@ margin-right: 30px;
   }
 
   .filter-item {
-    padding: 20px 24px;
+    padding: 20px 24px; 
   }
 
   .filter-name {
