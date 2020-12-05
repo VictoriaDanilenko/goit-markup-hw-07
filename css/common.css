@@ -12,6 +12,7 @@
   --description-color: #757575;
   --white-color: #ffffff;
   --accent-color: #2196f3;
+  --icons-color: #AFB1B8;
 }
 
 body {
@@ -40,10 +41,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+clip: rect(0000);
+overflow: hidden;
+}
 
 /* ЛОГОТИП */
-/* TODO: у логотипа паддинги */
-
 .logotype {
   display: block;
   padding-top: 24px;
@@ -114,15 +123,40 @@ img {
 
 /* СВЯЗАТЬСЯ С НАМИ  */
 .contact-us {
-display: flex;
+display: inline-flex;
 margin-left: auto;
+/* align-items: center;
+justify-content: center; */
+vertical-align: bottom;
 }
 
+/* СВЯЗАТЬСЯ С НАМИ - ИКОНКИ  */
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--description-color);
+}
+
+.smartphone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--description-color);
+}
+
+.mail:hover .mail-icon,
+.mail:focus .mail-icon,
+.smartphone:hover .smartphone-icon,
+.smartphone:focus .smartphone-icon {
+  fill: var(--accent-color);
+}
+
+/* СВЯЗАТЬСЯ С НАМИ - ССЫЛКИ */
 .contact-us a {
-  display: block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
-  
   color: var(--description-color);
   text-decoration: none;
   font-style: normal;
@@ -130,6 +164,7 @@ margin-left: auto;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .contact-us :hover,
 .contact-us :focus {
   color: var(--accent-color);

@@ -28,8 +28,10 @@
       </nav>
       <!-- СВЯЗАТЬСЯ С НАМИ -->
       <ul class="contact-us list">
-        <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="item"><a href="mailto:info@devstudio.com" class="mail">
+          <svg class="mail-icon"><use href="./images/sprite.svg#mail"></use></svg>info@devstudio.com</a></li>
+        <li class="item"><a href="tel:+380961111111" class="smartphone">
+          <svg class="smartphone-icon"><use href="./images/sprite.svg#smartphone"></use></svg>+38 096 111 11 11</a></li>
       </ul>
     </div>
     </header>
@@ -103,7 +105,18 @@
             <img src="./images/img-4.jpg" alt="Игорь Демьяненко" width="270"/>
             <div class="employees-member"><h3 class="cards-name">Игорь Демьяненко</h3>
             <p class="cards-description">Product Designer</p></div></li>
-          <li class="team-member-item">
+            <!-- ИКОНКИ -->
+            <ul class="team-social-list">
+              <li class="team-social-item">
+                <a class="team-social-link" href="">
+                  <svg class="team-social-icon"><use href="./images/sprite.svg#instagram"></use></svg>
+                </a>
+              </li>
+
+            </ul>
+            
+          
+            <li class="team-member-item">
             <img src="./images/img-5.jpg" alt="Ольга Репина" width="270"/>
             <div class="employees-member"><h3 class="cards-name">Ольга Репина</h3>
             <p class="cards-description">Frontend Developer</p></div>
@@ -119,6 +132,60 @@
         </ul>
       </div>
       </section>
+      <!-- ПОСТОЯННЫЕ КЛИЕНТЫ -->
+      <section class="clients-team box">
+        <div class="container">
+        <h2 class="section-title">Постоянные клиенты</h2>
+        <ul class="clients-flex list">
+            <li class="clients-flex-item">
+
+              <a class="button-icons"><span class="visually-hidden">Client-1</span>
+           <svg class="button-icon logo-1" width="44.27px;" height="49.23px"><use href="./images/sprite.svg#logo-1" class="clients"></use></svg></a>
+            </li>
+
+
+
+      
+            <li>
+            <div class="clients-flex-item">
+              <a><svg class="client-icon" width="40px;" height="52px"><use href="./images/sprite.svg#logo-2"></use></svg></a>
+            </div>
+            </li>
+
+            <!-- <ul class="team-social-list">
+              <li class="team-social-item">
+                <a class="team-social-link" href="">
+                  <svg class="team-social-icon"><use href="./images/sprite.svg#instagram"></use></svg>
+                </a>
+              </li> -->
+            <!-- <li class="clients-flex-item">
+              <a class="client">
+              <svg class="client-icon" width="40px;" height="52px"><use href="./images/sprite.svg#logo-2"></use></svg></a>
+             
+            </li> -->
+
+
+
+            <li class="clients-flex-item">
+              <img src="./images/clients_logo/logo3.svg" alt="clients-logo3"/>
+              
+            </li>
+            <li class="clients-flex-item">
+              <img src="./images/clients_logo/logo4.svg" alt="clients-logo4"/>
+              
+            </li>
+            <li class="clients-flex-item">
+              <img src="./images/clients_logo/logo5.svg" alt="clients-logo5"/>
+            
+            </li>
+            <li class="clients-flex-item">
+              <img src="./images/clients_logo/logo6.svg" alt="clients-logo6"/>
+      
+            </li>
+        </ul>
+      </div>
+      </section>
+
     </main>
     <!-- КОНЕЦ КОНТЕНТА -->
     <!-- ФУТЕР -->
