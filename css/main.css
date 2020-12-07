@@ -78,8 +78,27 @@
   cursor: pointer;
 }
 
-/* НАШИ ОСОБЕННОСТИ  */
+/* НАШИ ОСОБЕННОСТИ-ИКОНКИ  */
+/* .icon-antena {
 
+} */
+
+.feature-box {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 120px;
+border-radius: 4px;
+background-color: var(--box-background-color);
+margin-bottom: 30px;
+}
+
+.box-icon {
+width: 70px;
+height: 70px;
+}
+
+/* НАШИ ОСОБЕННОСТИ  */
 .box {
 padding-top: 94px;
 padding-bottom: 94px;
@@ -123,7 +142,11 @@ color: var(--description-color);
   margin-top: 0px;
   margin-bottom: 50px;
 }
+.section-title::first-letter {
+  text-transform: uppercase;
+}
 
+/* рабочие макеты */
 .work-topic {
   display: flex;
   padding-bottom: 94px;
@@ -133,28 +156,29 @@ color: var(--description-color);
   margin-right: 30px;
  }
 
-/* НАША КОМАНДА */
-.employees {
+/* TODO:НАША КОМАНДА */
+.team-panel {
   background-color: #F5F4FA;
-
 }
 
-.team-member {
+.team-panel .list {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.team-member-item {
-background: #FFFFFF;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-}
-
-.team-member-item:not(:last-child) {
+.member-card:not(:last-child) {
 margin-right: 30px;
 }
-.employees-member {
-  text-align: center;
-  margin-top: 30px;
+
+.team-panel .card-container {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+  }
+
+.member-img {
   margin-bottom: 30px; 
 }
 
@@ -163,32 +187,77 @@ margin-right: 30px;
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 10px;
-  margin-top: 0px;
+  text-align: center;
 }
 .cards-description {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--description-color);
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
+  text-align: center;
 }
 
+/* НАША КОМАНДА СОЦ ИКОНКИ */
+.social-list {
+list-style: none;
+display: flex;
+justify-content: center;
+}
+
+.social-item:not(:last-child) {
+margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--icons-color);
+  background-color: var(--white-color);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-instagram,
+.social-twitter,
+.social-facebook,
+.social-linkedin {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.social-link:hover .social-instagram,
+.social-link:focus .social-instagram,
+.social-link:hover .social-twitter,
+.social-link:focus .social-twitter, 
+.social-link:hover .social-facebook,
+.social-link:focus .social-facebook, 
+.social-link:hover .social-linkedin,
+.social-link:focus .social-linkedin {
+  fill: var(--white-color);
+}
+
+
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
-.clients-team {
+.clients-panel {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients-flex {
+.clients-list {
   display: flex;
 }
-.clients-flex-item {
+.clients-item {
   display: flex;
-  
   margin-right: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;

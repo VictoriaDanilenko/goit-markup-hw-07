@@ -45,29 +45,47 @@
       <!-- НАШИ ОСОБЕННОСТИ -->
       <section class="box">
         <div class="container list">
+          <h2 class="section-title visually-hidden">Наши особенности</h2>
         <ul class="feature-topic list">
-          <li class="item">
+          
+          <!-- ИКОНКА АНТЕНА -->
+          <li class="item icon-antena">
+            <div class="feature-box">
+              <svg class="box-icon icon-antena"><use href="./images/sprite.svg#antenna"</use></svg>
+            </div>
             <h3 class="title">Внимание к деталям</h3>
             <p class="text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li class="item">
+          <!-- ИКОНКА ЧАСЫ -->
+          <li class="item icon-clock">
+            <div class="feature-box">
+              <svg class="box-icon icon-clock"><use href="./images/sprite.svg#clock"</use></svg>
+            </div>
             <h3 class="title">Пунктуальность</h3>
             <p class="text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li class="item">
+          <!-- ИКОНКА ДИАГРАММА -->
+          <li class="item icon-diagram">
+            <div class="feature-box">
+              <svg class="box-icon icon-diagram"><use href="./images/sprite.svg#diagram"</use></svg>
+            </div>
             <h3 class="title">Планирование</h3>
             <p class="text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li class="item">
+          <!-- ИКОНКА АСТРОНАВТ -->
+          <li class="item icon-astronaut">
+            <div class="feature-box">
+              <svg class="box-icon icon-astronaut"><use href="./images/sprite.svg#astronaut"</use></svg>
+            </div>
             <h3 class="title">Современные технологии</h3>
             <p class="text">
               Значимость этих проблем настолько очевидна, что реализация
@@ -82,64 +100,148 @@
         <div class="container list">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="work-topic list">
-          <li class="item">
-            <img src="./images/img.jpg" alt="Проетирование" width="370" />
-          </li>
-          <li class="item"><img src="./images/img-2.jpg" alt="Макеты" width="370" /></li>
-          <li class="item">
-            <img
-              src="./images/img-3.jpg"
-              alt="Индивидуальный подход"
-              width="370"
-            />
-          </li>
+          <li class="item"><img src="./images/img.jpg" alt="Проетирование" width="370"/></li>
+          <li class="item"><img src="./images/img-2.jpg" alt="Макеты" width="370"/></li>
+          <li class="item"><img src="./images/img-3.jpg" alt="Индивидуальный подход" width="370"/></li>
         </ul>
       </div>
       </section>
       <!-- НАША КОМАНДА -->
-      <section class="employees box">
-        <div class="container">
-        <h2 class="section-title">Наша команда</h2>
-        <ul class="team-member list">
-          <li class="team-member-item">
-            <img src="./images/img-4.jpg" alt="Игорь Демьяненко" width="270"/>
-            <div class="employees-member"><h3 class="cards-name">Игорь Демьяненко</h3>
-            <p class="cards-description">Product Designer</p></div></li>
-            <!-- ИКОНКИ -->
-            <ul class="team-social-list">
-              <li class="team-social-item">
-                <a class="team-social-link" href="">
-                  <svg class="team-social-icon"><use href="./images/sprite.svg#instagram"></use></svg>
+      <section class="team-panel box">
+         <div class="container">
+            <h2 class="section-title">Наша команда</h2>
+            <!-- ПАНЕЛЬ РАБОТНИКОВ -->
+            <ul class="list">
+                     <!-- Игорь Демьяненко -->
+             <li class="member-card">
+              <div class="card-container">
+                  <img src="./images/img-4.jpg" alt="Игорь Демьяненко" width="270" class="member-img"/>
+                     <h3 class="cards-name">Игорь Демьяненко</h3>
+                        <p class="cards-description">Product Designer</p>
+                      <ul class="social-list">
+                          <li class="social-item">
+                            <a href="" class="social-link">
+                            <svg class="social-instagram"><use href="./images/sprite.svg#instagram"></use></svg>
+                              </a>
+                          </li>
+                          <li class="social-item">
+                            <a href="" class="social-link">
+                              <svg class="social-twitter"><use href="./images/sprite.svg#twitter"></use></svg>
+                            </a>
+                          </li>
+                          <li class="social-item">
+                            <a href="" class="social-link">
+                              <svg class="social-facebook"><use href="./images/sprite.svg#facebook"></use></svg>
+                            </a>
+                          </li>
+                          <li class="social-item">
+                            <a href="" class="social-link">
+                              <svg class="social-linkedin"><use href="./images/sprite.svg#linkedin"></use></svg>
+                            </a>
+                          </li>
+                      </ul>
+              </div>
+            </li>
+        <!-- Ольга Репина -->
+            <li class="member-card">
+              <div class="card-container">
+                     <img src="./images/img-5.jpg" alt="Ольга Репина" width="270" class="member-img"/>
+                        <h3 class="cards-name">Ольга Репина</h3>
+                           <p class="cards-description">Frontend Developer</p>
+               <ul class="social-list">
+                 <li class="social-item">
+                   <a href="" class="social-link">
+                     <svg class="social-instagram"><use href="./images/sprite.svg#instagram"></use></svg>
+                   </a>
+                 </li>
+                 <li class="social-item">
+                   <a href="" class="social-link">
+                     <svg class="social-twitter"><use href="./images/sprite.svg#twitter"></use></svg>
+                   </a>
+                 </li>
+                 <li class="social-item">
+                   <a href="" class="social-link">
+                     <svg class="social-facebook"><use href="./images/sprite.svg#facebook"></use></svg>
+                   </a>
+                 </li>
+                 <li class="social-item">
+                   <a href="" class="social-link">
+                     <svg class="social-linkedin"><use href="./images/sprite.svg#linkedin"></use></svg>
+                    </a>
+                  </li>
+              </ul>
+      </div>
+            </li>
+        <!-- Николай Тарасов -->
+        <li class="member-card">
+          <div class="card-container">
+                 <img src="./images/img-6.jpg" alt="Николай Тарасов" width="270" class="member-img"/>
+                    <h3 class="cards-name">Николай Тарасов</h3>
+                       <p class="cards-description">Marketing</p>
+           <ul class="social-list">
+             <li class="social-item">
+               <a href="" class="social-link">
+                 <svg class="social-instagram"><use href="./images/sprite.svg#instagram"></use></svg>
+               </a>
+             </li>
+             <li class="social-item">
+               <a href="" class="social-link">
+                 <svg class="social-twitter"><use href="./images/sprite.svg#twitter"></use></svg>
+               </a>
+             </li>
+             <li class="social-item">
+               <a href="" class="social-link">
+                 <svg class="social-facebook"><use href="./images/sprite.svg#facebook"></use></svg>
+               </a>
+             </li>
+             <li class="social-item">
+               <a href="" class="social-link">
+                 <svg class="social-linkedin"><use href="./images/sprite.svg#linkedin"></use></svg>
                 </a>
               </li>
-
+          </ul>
+  </div>
+        </li>
+         <!-- Михаил Ермаков -->
+           <li class="member-card">
+            <div class="card-container">
+                   <img src="./images/img-7.jpg" alt="Михаил Ермаков" width="270" class="member-img"/>
+                      <h3 class="cards-name">Михаил Ермаков</h3>
+                         <p class="cards-description">UI Designer</p>
+             <ul class="social-list">
+               <li class="social-item">
+                 <a href="" class="social-link">
+                   <svg class="social-instagram"><use href="./images/sprite.svg#instagram"></use></svg>
+                 </a>
+               </li>
+               <li class="social-item">
+                 <a href="" class="social-link">
+                   <svg class="social-twitter"><use href="./images/sprite.svg#twitter"></use></svg>
+                 </a>
+               </li>
+               <li class="social-item">
+                 <a href="" class="social-link">
+                   <svg class="social-facebook"><use href="./images/sprite.svg#facebook"></use></svg>
+                 </a>
+               </li>
+               <li class="social-item">
+                 <a href="" class="social-link">
+                   <svg class="social-linkedin"><use href="./images/sprite.svg#linkedin"></use></svg>
+                  </a>
+                </li>
             </ul>
-            
-          
-            <li class="team-member-item">
-            <img src="./images/img-5.jpg" alt="Ольга Репина" width="270"/>
-            <div class="employees-member"><h3 class="cards-name">Ольга Репина</h3>
-            <p class="cards-description">Frontend Developer</p></div>
+    </div>
           </li>
-          <li class="team-member-item"> 
-            <img src="./images/img-6.jpg" alt="Николай Тарасов" width="270"/>
-            <div class="employees-member"><h3 class="cards-name">Николай Тарасов</h3>
-            <p class="cards-description">Marketing</p></div></li>
-          <li class="team-member-item">
-            <img src="./images/img-7.jpg" alt="Михаил Ермаков" width="270"/>
-            <div class="employees-member"><h3 class="cards-name">Михаил Ермаков</h3>
-            <p class="cards-description">UI Designer</p></div></li>
-        </ul>
+          </ul>
       </div>
       </section>
       <!-- ПОСТОЯННЫЕ КЛИЕНТЫ -->
-      <section class="clients-team box">
+      <section class="clients-panel box">
         <div class="container">
         <h2 class="section-title">Постоянные клиенты</h2>
-        <ul class="clients-flex list">
-            <li class="clients-flex-item">
-
-              <a class="button-icons"><span class="visually-hidden">Client-1</span>
+        <ul class="clients-list list">
+            <li class="clients-item">
+              <a href class="button-icons"><span class="visually-hidden">Client-1</span>
            <svg class="button-icon logo-1" width="44.27px;" height="49.23px"><use href="./images/sprite.svg#logo-1" class="clients"></use></svg></a>
             </li>
 
