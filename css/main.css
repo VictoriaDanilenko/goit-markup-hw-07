@@ -148,6 +148,7 @@ color: var(--description-color);
 
 /* рабочие макеты */
 .work-topic {
+  /* position: relative; */
   display: flex;
   padding-bottom: 94px;
 }
@@ -156,7 +157,30 @@ color: var(--description-color);
   margin-right: 30px;
  }
 
-/* TODO:НАША КОМАНДА */
+ .work-topic .item {
+ position: relative; 
+}
+
+ .img-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-weight: bold;
+  line-height: 1.142;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+
+  /* width: 370px;
+  height: 70px; */
+  background: rgba(47, 48, 58, 0.8);
+ }
+
+/* НАША КОМАНДА */
 .team-panel {
   background-color: #F5F4FA;
 }
@@ -382,7 +406,7 @@ margin-right: 10px;
   .filter-topic:nth-child(n+7) {
     margin-bottom: 0;
   }
-
+   
   .filter-item {
     padding: 20px 24px; 
     cursor: pointer;
@@ -404,5 +428,17 @@ margin-right: 10px;
     margin: auto;
   }
 
+/* ГАЛЕРЕЯ ФИЛЬТРОВ POSITION */
+  .portfolio-link {
+    display: block;
+    text-decoration: none;
+    /* transition: box-shadow 250ms var(--timing-func); */
+  }
   
+   .filter-overlay::before {
+     content: "";
+     width: 50px;
+     height: 50px;
+     background-color: var(--accent-color);
+   }
 
