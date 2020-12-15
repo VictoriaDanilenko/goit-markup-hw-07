@@ -9,9 +9,7 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./modal.js" />
-    
+    <link rel="stylesheet" href="./css/main.css" />  
     <title>WebStudio</title>
   </head>
   <body>
@@ -42,7 +40,7 @@
       <!-- ГЕРОЙ -->
       <section class="main-hero overlay">
         <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
-        <button type="button" class="button hero">Заказать услугу</button>
+        <button type="button" class="button hero" data-modal-open>Заказать услугу</button>
       </section>
       <!-- НАШИ ОСОБЕННОСТИ -->
       <section class="box">
@@ -246,22 +244,22 @@
               <ul class="clients-list list">
                 <li class="clients-item">
                   <a href="#" class="client-link">
-                      <svg class="icons-logo-1"><use href="./images/sprite.svg#logo-1"></use></svg></a></li>
+                      <svg class="icons-client icons-logo-1"><use href="./images/sprite.svg#logo-1"></use></svg></a></li>
                       <li class="clients-item">
                         <a href="#" class="client-link">
-                            <svg class="icons-logo-2"><use href="./images/sprite.svg#logo-2"></use></svg></a></li>
+                            <svg class="icons-client icons-logo-2"><use href="./images/sprite.svg#logo-2"></use></svg></a></li>
                             <li class="clients-item">
                               <a href="#" class="client-link">
-                                  <svg class="icons-logo-3"><use href="./images/sprite.svg#logo-3"></use></svg></a></li>
+                                  <svg class="icons-client icons-logo-3"><use href="./images/sprite.svg#logo-3"></use></svg></a></li>
                                   <li class="clients-item">
                                     <a href="#" class="client-link">
-                                        <svg class="icons-logo-4"><use href="./images/sprite.svg#logo-4"></use></svg></a></li>
+                                        <svg class="icons-client icons-logo-4"><use href="./images/sprite.svg#logo-4"></use></svg></a></li>
                                         <li class="clients-item">
                                           <a href="#" class="client-link">
-                                              <svg class="icons-logo-5"><use href="./images/sprite.svg#logo-5"></use></svg></a></li>
+                                              <svg class="icons-client icons-logo-5"><use href="./images/sprite.svg#logo-5"></use></svg></a></li>
                                               <li class="clients-item">
                                                 <a href="#" class="client-link">
-                                                    <svg class="icons-logo-6"><use href="./images/sprite.svg#logo-6"></use></svg></a></li>
+                                                    <svg class="icons-client icons-logo-6"><use href="./images/sprite.svg#logo-6"></use></svg></a></li>
             
               </ul>
          </div>
@@ -307,6 +305,20 @@
             </div>
         </div>
     </footer>
-    <script src="./js/modal.js"></script>
-    </body>
-    </html>
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo cum suscipit quia possimus facilis consequatur sint omnis fuga dignissimos
+          libero quibusdam eum, voluptatum recusandae est placeat atque repudiandae dolorum necessitatibus tempore laudantium!
+        </p>
+        <button type="button" class="btn-close" data-modal-close>
+          <svg class="icon-close">
+            <use href="./images/sprite-icon.svg#close-bb"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./script/modal.js"></script>
+  </body>
+</html>

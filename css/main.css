@@ -69,7 +69,17 @@
   background-color: var(--accent-color);
   display: inline-block;
   padding: 10px 32px;
+  border:none;
+  outline:none;
   cursor: pointer;
+  transition: color 250ms var(--time-step),
+  background-color 250ms var(--time-step);
+}
+
+.button.hero:hover,
+.button.hero:focus {
+  background-color: var(--white-color);
+  color: var(--accent-color);
 }
 
 .button {
@@ -238,7 +248,9 @@ margin-right: 10px;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  transition: background-color 250ms var(--time-step);
 }
+
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
@@ -251,7 +263,9 @@ margin-right: 10px;
   width: 20px;
   height: 20px;
   fill: currentColor;
+  transition: fill 250ms var(--time-step);
 }
+
 .social-link:hover .social-instagram,
 .social-link:focus .social-instagram,
 .social-link:hover .social-twitter,
@@ -283,6 +297,7 @@ margin-right: 10px;
   border-radius: 4px;
   width: 170px;
   height: 90px;
+  transition: border-color 250ms var(--time-step);
 }
 
 .client-link:hover,
@@ -305,35 +320,34 @@ margin-right: 10px;
   fill: var(--accent-color);
 }
 
+.icons-client {
+fill: currentColor;
+transition: fill 250ms var(--time-step);
+}
+
 .icons-logo-1 {
   width:  44.27px;
   height: 49.23px;
-  fill: currentColor;
 }
 .icons-logo-2 {
   width:  40px;
   height: 52px;
-  fill: currentColor;
 }
 .icons-logo-3 {
   width:  41px;
   height: 42.6px;
-  fill: currentColor;
 }
 .icons-logo-4 {
   width:  79.66px;
   height: 42.02px;
-  fill: currentColor;
 }
 .icons-logo-5 {
   width:  59px;
   height: 47px;
-  fill: currentColor;
 }
 .icons-logo-6 {
   width:  88.48px;
   height: 45.44px;
-  fill: currentColor;
 }
 
   /* СТРАНИЦА ПОРТФОЛИО */
@@ -358,14 +372,16 @@ margin-right: 10px;
       margin-right: 8px;
     }
   
-  .button.item:hover,
-  .button.item:focus,
-  .button.item:active {
+  .button.item.current {
     color: var(--white-color);
     background-color: var(--accent-color);
     font-family: inherit;
-  }
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 
+  }
+  
   .button.item {
     padding: 6px 22px;
     font-weight: 500;
@@ -374,6 +390,20 @@ margin-right: 10px;
     border-radius: 4px;
     border: none;
     outline: none;
+    transition: color 250ms var(--time-step),
+    background-color 250ms var(--time-step),
+    box-shadow 250ms var(--time-step);
+  }
+
+  .button.item:hover,
+  .button.item:focus,
+  .button.item:active {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+     0px 1px 2px rgba(0, 0, 0, 0.08),
+     0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
   /* ГАЛЕРЕЯ ФИЛЬТРОВ */
@@ -461,4 +491,65 @@ margin-right: 10px;
     .portfolio-link:focus .img-info {
     opacity: 1;
     transform: translateY(0%);
+    }
+
+    /* МОДАЛЬНОЕ ОКНО */
+    .backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      opacity: 1;
+      transition: opacity 250ms var(--time-step);
+    }
+
+    .backdrop.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .backdrop.is-hidden .modal {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+
+    .modal {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-height: 581px;
+      width: 528px;
+      background-color: var(--white-color);
+      padding: 40px;
+      transform: translate(-50%, -50%) scale(1);
+      transition: transform 250ms var(--time-step);
+    }
+
+    .btn-close {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      background-color: var(--white-color);
+      cursor: pointer;
+      outline:none;
+    }
+
+    .icon-close {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 18px;
+      height: 18px;
+      fill: #000000;
+      transition: fill 250ms var(--time-step);
+    }
+
+    .btn-close:hover .icon-close {
+      fill: var(--accent-color);
     }
