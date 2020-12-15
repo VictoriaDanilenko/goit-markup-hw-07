@@ -1,5 +1,12 @@
-.vscode/ 
 .DS_Store
+
+.vscode/
+hidetext.txt
+
+#IDE 
+.idea/ 
+.vscode/
+
 # Logs
 logs
 *.log
