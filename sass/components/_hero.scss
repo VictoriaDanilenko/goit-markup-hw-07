@@ -1,0 +1,72 @@
+// ГЕРОЙ
+.hero-title {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.main-hero {
+  text-align: center;
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url("../images/Img-10-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #c4c4c4;
+}
+
+/* КНОПКИ */
+.button.hero {
+  height: 50px;
+  min-width: 200px;
+  border-radius: 4px;
+  border-color: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  display: inline-block;
+  padding: 10px 32px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: color 250ms var(--time-step),
+    background-color 250ms var(--time-step);
+}
+
+.button.hero:hover,
+.button.hero:focus {
+  background-color: var(--white-color);
+  color: var(--accent-color);
+}
+
+.button {
+  color: var(--title-text-color);
+  text-align: center;
+  cursor: pointer;
+}

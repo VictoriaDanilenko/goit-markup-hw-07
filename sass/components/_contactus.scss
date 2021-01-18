@@ -1,0 +1,52 @@
+// СВЯЗАТЬСЯ С НАМИ
+.contact-us {
+  display: inline-flex;
+  margin-left: auto;
+  vertical-align: bottom;
+}
+
+/* СВЯЗАТЬСЯ С НАМИ - ИКОНКИ  */
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--description-color);
+  transition: fill 250ms var(--time-step)
+}
+
+.smartphone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--description-color);
+  transition: fill 250ms var(--time-step)
+}
+
+.mail:hover .mail-icon,
+.mail:focus .mail-icon,
+.smartphone:hover .smartphone-icon,
+.smartphone:focus .smartphone-icon {
+  fill: var(--accent-color);
+}
+//СВЯЗАТЬСЯ С НАМИ - ССЫЛКИ 
+.contact-us a {
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--description-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms var(--time-step)
+}
+
+.contact-us :hover,
+.contact-us :focus {
+  color: var(--accent-color);
+}
+
+.contact-us .item:not(:last-child) {
+  margin-right: 50px;
+}

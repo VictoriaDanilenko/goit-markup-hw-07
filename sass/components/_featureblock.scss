@@ -1,0 +1,46 @@
+// НАШИ ОСОБЕННОСТИ-ИКОНКИ
+.feature-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--box-background-color);
+  margin-bottom: 30px;
+}
+
+.box-icon {
+  width: 70px;
+  height: 70px;
+}
+
+// НАШИ ОСОБЕННОСТИ
+.box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.feature-topic {
+  display: flex;
+}
+
+.feature-topic .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-topic .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.feature-topic .text {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 270px;
+  line-height: 1.71;
+  color: var(--description-color);
+}

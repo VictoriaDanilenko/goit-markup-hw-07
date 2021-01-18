@@ -1,0 +1,21 @@
+//ЛОГОТИП 
+.logotype {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logotype-style {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}

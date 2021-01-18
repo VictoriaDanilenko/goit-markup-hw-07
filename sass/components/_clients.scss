@@ -1,0 +1,77 @@
+// ПОСТОЯННЫЕ КЛИЕНТЫ
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icons-color);
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+  transition: border-color 250ms var(--time-step);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.client-link:hover .icons-logo-1,
+.client-link:focus .icons-logo-1,
+.client-link:hover .icons-logo-2,
+.client-link:focus .icons-logo-2,
+.client-link:hover .icons-logo-3,
+.client-link:focus .icons-logo-3,
+.client-link:hover .icons-logo-4,
+.client-link:focus .icons-logo-4,
+.client-link:hover .icons-logo-5,
+.client-link:focus .icons-logo-5,
+.client-link:hover .icons-logo-6,
+.client-link:focus .icons-logo-6 {
+  fill: var(--accent-color);
+}
+
+.icons-client {
+  fill: currentColor;
+  transition: fill 250ms var(--time-step);
+}
+
+.icons-logo-1 {
+  width: 44.27px;
+  height: 49.23px;
+}
+
+.icons-logo-2 {
+  width: 40px;
+  height: 52px;
+}
+
+.icons-logo-3 {
+  width: 41px;
+  height: 42.6px;
+}
+
+.icons-logo-4 {
+  width: 79.66px;
+  height: 42.02px;
+}
+
+.icons-logo-5 {
+  width: 59px;
+  height: 47px;
+}
+
+.icons-logo-6 {
+  width: 88.48px;
+  height: 45.44px;
+}
+
