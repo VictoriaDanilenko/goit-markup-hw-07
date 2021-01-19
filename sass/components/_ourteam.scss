@@ -1,6 +1,6 @@
 // НАША КОМАНДА
 .team-panel {
-  background-color: #F5F4FA;
+  background-color: $box-background-color;
 }
 
 .team-panel .list {
@@ -14,7 +14,7 @@
 }
 
 .team-panel .card-container {
-  background: #FFFFFF;
+  background: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
@@ -35,7 +35,7 @@
 .cards-description {
   font-size: 16px;
   line-height: 1.19;
-  color: var(--description-color);
+  color: $description-color;
   margin-bottom: 16px;
   text-align: center;
 }
@@ -52,22 +52,29 @@
 }
 
 .social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-row;
   width: 44px;
   height: 44px;
-  color: var(--icons-color);
-  background-color: var(--white-color);
+  color: $icons-color;
+  background-color: $white-color;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
-  transition: background-color 250ms var(--time-step);
-}
-
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color);
+  transition: background-color 250ms $time-step;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  &:hover .social-instagram,
+  &:focus .social-instagram,
+  &:hover .social-twitter,
+  &:focus .social-twitter,
+  &:hover .social-facebook,
+  &:focus .social-facebook,
+  &:hover .social-linkedin,
+  &:focus .social-linkedin {
+  fill: $white-color;
+  }
+  }
 }
 
 .social-instagram,
@@ -77,16 +84,5 @@
   width: 20px;
   height: 20px;
   fill: currentColor;
-  transition: fill 250ms var(--time-step);
-}
-
-.social-link:hover .social-instagram,
-.social-link:focus .social-instagram,
-.social-link:hover .social-twitter,
-.social-link:focus .social-twitter,
-.social-link:hover .social-facebook,
-.social-link:focus .social-facebook,
-.social-link:hover .social-linkedin,
-.social-link:focus .social-linkedin {
-  fill: var(--white-color);
+  transition: fill 250ms $time-step;
 }

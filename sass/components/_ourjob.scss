@@ -5,7 +5,7 @@
 
 // заголовок секции (#2-#3)
 .section-title {
-  font-weight: bold;
+  font-weight: $boldFontWeight;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -36,12 +36,12 @@
   bottom: 0;
   right: 0;
   left: 0;
-  font-weight: bold;
+  font-weight: $boldFontWeight;
   line-height: 1.142;
   text-align: center;
   text-transform: uppercase;
-  color: var(--white-color);
+  color: $white-color;
   padding-top: 27px;
   padding-bottom: 27px;
-  background: var(--overlay-color);
+  background: $overlay-color;
 }

@@ -1,8 +1,8 @@
 // ФУТЕР
 .footer {
-  background-color: var(--footer-bgcolor);
+  background-color: $footer-bgcolor;
   padding: 60px 0;
-  color: var(--white-color);
+  color: $white-color;
 }
 
 .footer-panel {
@@ -27,10 +27,10 @@
 .logotype-inverse {
   display: inline-block;
   margin-bottom: 20px;
-  color: var(--accent-color);
+  color: $accent-color;
   text-decoration: none;
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
+  font-family: $logoFont;
+  font-weight: $boldFontWeight;
   font-size: 26px;
   line-height: 1.19;
 }
@@ -38,8 +38,8 @@
 .logotype-footer {
   color: #ffffff;
   text-decoration: none;
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
+  font-family: $logoFont;
+  font-weight: $boldFontWeight;
   font-size: 26px;
   line-height: 1.19;
 }
@@ -51,19 +51,19 @@
 .address-item a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1.71;
+  font-style: $mainFontStyle;
+  font-weight: $mainFontWeight;
+  line-height: 1.714;
 }
 
 .address-item .address-color {
-  color: var(--white-color);
+  color: $white-color;
 }
 
 .join {
   display: inline-block;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: $boldFontWeight;
   line-height: 1.14;
   margin-bottom: 20px;
 }
@@ -77,22 +77,20 @@
 }
 
 .footer-social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-row;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms var(--time-step);
+  transition: background-color 250ms $time-step;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent-color);
-}
 
 .icon-instagram,
 .icon-twitter,
@@ -100,7 +98,7 @@
 .icon-linkedin {
   width: 20px;
   height: 20px;
-  fill: var(--white-color);
+  fill: $white-color;
 }
 
 // ФУТЕР ФОРМА
@@ -115,10 +113,10 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-size: 16px;
   line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: var(--footer-text-color);
+  letter-spacing: $mainLetterSpacing;
+  color: $footer-text-color;
   margin-right: 12px;
-  background: var(--footer-bgcolor);
+  background: $footer-bgcolor;
 
 }
 
@@ -132,13 +130,13 @@
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: $boldFontWeight;
   line-height: 1.875;
   letter-spacing: 0.06em;
   text-align: left;
   border: none;
-  color: var(--white-color);
-  background: var(--accent-bgr);
+  color: $white-color;
+  background: $accent-bgr;
   outline: none;
 }
 

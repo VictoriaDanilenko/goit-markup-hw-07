@@ -1,11 +1,9 @@
 // НАШИ ОСОБЕННОСТИ-ИКОНКИ
 .feature-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-row;
   height: 120px;
   border-radius: 4px;
-  background-color: var(--box-background-color);
+  background-color: $box-background-color;
   margin-bottom: 30px;
 }
 
@@ -31,10 +29,10 @@
 .feature-topic .title {
   margin-top: 0;
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: $boldFontWeight;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .feature-topic .text {
@@ -42,5 +40,5 @@
   margin-bottom: auto;
   width: 270px;
   line-height: 1.71;
-  color: var(--description-color);
+  color: $description-color;
 }
